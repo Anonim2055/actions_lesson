@@ -6,3 +6,5 @@ jobs:
     steps:
       - name: my-step
         run: echo Hello World!
+      - name: Print commit message
+        run: echo ${{ github.event.head_commit.message }}
